@@ -13,7 +13,7 @@
 </html>
 
 <!--
--------- -------------React Router setup---------------
+-------- ------------------------------------------------React Router setup----------------------------------------------------------------------
 
 1. go to cmd and the projects folder using 'cd \projects'
 2. go to 'react router' at chrome --- > getting started --- > tutorial 
@@ -29,7 +29,7 @@
 -->
 
 <!-- 
---------------------route-----------------
+------------------------------------------------------------route-----------------------------------------------------------------------------
 
 1. Create a folder named 'components'
 2. In component folder create another folder named 'Home'
@@ -40,7 +40,7 @@
  -->
 
 <!-- 
- ----------------------------nested route------------------------
+ --------------------------------------------------------nested route----------------------------------------------------------------------------
 
  => ekta page k koyek vage vag kore specific kichu thik rekhe bakita change hbe. etake nested route bole
  => eta declare korar jonno 
@@ -50,7 +50,7 @@
  -->
 
 <!-- 
- ----------------------------------- use link --------------------------- 
+ ---------------------------------------------------------- use link ---------------------------------------------------------------------------- 
 
  => normally  kichu click korle onno jaygay jawar jonno amra <a></a> use kori. kintu react router er khetre 'Link' use korbo.
  => er jonno --
@@ -59,7 +59,7 @@
 -->
 
 <!--
- _____________________________SUMMERY_________________________
+ ___________________________________________________________SUMMERY________________________________________________________________
  
  => header and footer are always common in our website. Ejonno 'Home' er moddhe header r footer same rekhe majhkhaner component gulor jonno outlet use korbo.
 
@@ -69,7 +69,7 @@
 -->
 
 <!-- 
--------------------------------Load data on route using 'loader' and 'useLoaderData'-------------------------------- 
+---------------------------------------Load data on route using 'loader' and 'useLoaderData'----------------------------------------------------- 
 
 1. go to 'json placeholder' and get users data link
 2. 'main.jsx' e ekta route add kore sekhane ekta property dibo 'loader' name e.
@@ -81,7 +81,7 @@
 -->
 
 <!-- 
------------------------Dynamic route with params and load single user data---------------------- 
+----------------------------------------Dynamic route with params and load single user data------------------------------------------------------ 
  
 1. 'main.jsx' e ekta path banbo jekhane userId gulo dynamic vabe pass hobe. ejoonno '/userId' er age ekta colon (:) sign dite hobe
 2. oi user er data gulo load korbo users er data jevabe load korchi sevabei. 
@@ -93,7 +93,7 @@
 -->
 
 <!-- 
----------------------------------------Navigation onClick---------------------------------------------
+----------------------------------------------------Navigation onClick---------------------------------------------------------------------------
  
 1. create a button in 'User.jsx'
 2. create a function in the same file named "handleShowDetails()" to load details
@@ -104,14 +104,15 @@
 -->
 
 <!-- 
--------------------------------Go back handler----------------------------
+----------------------------------------------------Go back handler------------------------------------------------------------------------------
  
 1. create a button & a function 
 2. then navigate
 -->
 
 <!-- 
--------------------------------Not found and use params----------------------------
+------------------------------------------------Not found and use params-------------------------------------------------------------------------
+
  => react router er tutorial e gele not found pawa jabe. oikhane steps gulo deyaa ache
 
 1. create 'ErrorPage' component
@@ -121,8 +122,37 @@
 -->
 
 <!-- 
------------------------use params--------------------- 
+--------------------------------------------------------use params------------------------------------------------------------------------------- 
  
 => react router -> Hooks -> use params (ekhane pabo steps gulo)
-1. 
+
+-->
+
+<!-- 
+------------------------------------------------------Active route------------------------------------------------------------------------------- 
+ 
+=> react router e navlink e gele steps gula pawa jabe
+
+1. use 'NavLink' instead of Link. eta o link er motoi dite hoy. just keyword ta changed.
+  ** NavLink use korle jeita click korbe seta te auto ekta 'active' class add hoye jay. tarpor amra active cls e css diye dile jeta click korbe seta te oi style add hoye jabe.
+2. add css in 'active' class
+3. 
+-->
+
+<!-- 
+-----------------------------------------------------Loading spinner----------------------------------------------------------------------------- 
+ 
+
+-->
+
+<!-- 
+------------------------------------------------------use location------------------------------------------------------------------------------- 
+ 
+
+-->
+
+<!-- 
+-----------------------------------------------------use navigation----------------------------------------------------------------------------- 
+ 
+ 
 -->
