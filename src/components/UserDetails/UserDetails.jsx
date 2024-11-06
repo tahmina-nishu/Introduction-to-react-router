@@ -1,4 +1,4 @@
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData, useNavigate } from "react-router-dom";
 
 const UserDetails = () => {
 
@@ -13,10 +13,18 @@ const user = useLoaderData();
 console.log(user);
 const {name} = user;
 
+const navigate = useNavigate();
+
+
+    // function to handle go back 
+    const handleGoBack = ()=> {
+        navigate(-1);
+    }
     return (
         <div style={userDetailsStyle}>
             <h3>Details about user</h3>
             <p>Name: {name}</p>
+            <button onClick={handleGoBack}>Go Back</button>
         </div>
     );
 };
