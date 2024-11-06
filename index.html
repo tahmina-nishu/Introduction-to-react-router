@@ -79,3 +79,15 @@
 6. 'User' component er moddhe 'user' k props hisebe pathabo & needed property gulo k destruct korbo
 7. 
 -->
+
+<!-- 
+-----------------------Dynamic route with params and load single user data---------------------- 
+ 
+1. 'main.jsx' e ekta path banbo jekhane userId gulo dynamic vabe pass hobe. ejoonno '/userId' er age ekta colon (:) sign dite hobe
+2. oi user er data gulo load korbo users er data jevabe load korchi sevabei. 
+3. 'UserDetails' name e ekta folder, sekhane ekta file 'UserDetails.jsx' banay rsc diye component create korbo
+4. fetch kora data gulo load kore destruct kore tarpor ja jaa information dekhanor segulo dekhabo. 
+  demo: path: '/users/:userId',
+        loader: ({params})=> fetch(`https://jsonplaceholder.typicode.com/users/${params.userId}`),
+        element: <UserDetails ></UserDetails>
+-->
