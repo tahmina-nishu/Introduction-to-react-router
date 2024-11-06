@@ -1,4 +1,4 @@
-import { useLoaderData, useNavigate } from "react-router-dom";
+import { useLoaderData, useNavigate, useParams } from "react-router-dom";
 
 const UserDetails = () => {
 
@@ -10,6 +10,9 @@ const UserDetails = () => {
     }
 
 const user = useLoaderData();
+const {userId} = useParams();
+console.log(userId);
+
 console.log(user);
 const {name} = user;
 
